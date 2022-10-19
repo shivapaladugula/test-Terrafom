@@ -1,3 +1,3 @@
 resource "aws_s3_bucket" "test_bucket"  {
-    bucket = "october00110022"
+    bucket = "october0011002233"
 }
