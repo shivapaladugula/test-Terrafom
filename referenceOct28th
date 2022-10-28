@@ -1,0 +1,15 @@
+pipeline {
+    agent {
+             label 'NODE'
+        }
+    stages {
+        stage('test') {
+            steps {
+                sh 'cd /home/ubuntu/ntier/workspace/Practice'
+                sh 'terraform validate'
+                sh 'terraform plan'
+                sh 'terraform apply -auto-approve'
+            }
+        }
+    }
+}
